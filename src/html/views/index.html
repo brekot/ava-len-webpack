@@ -11,202 +11,171 @@
 </head>
 <body>
 
-    <!-- Шапка сайта -->
-    <header class="main-header">
-        <div class="container">
-            <div class="main-header__inner">
-                <a href="javascript:;" class="btn-menu font-md"></a>
-                <div class="main-header__left">
-                    <a href="/" class="main-header__logo">
-                        <img class="main-header__logo-pict" src="./local/img/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="main-header__center">
+    <!-- Панель битрикса вставить сюда, до position-relative (если она будет) -->
 
-                    <!-- Информация в шапке -->
-                    <div class="head-info">
-                        <div class="head-info__item head-info__item_border">
-                            <div class="head-info__label">Тариф</div>
-                            <div class="head-info__value">Стартовый</div>
+    <div class="position-relative">
+
+        <!-- Шапка сайта -->
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header__inner">
+                    <div class="main-header__left">
+                        <a href="/" class="main-header__logo">
+                            <img class="main-header__logo-pict" src="./local/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="main-header__center">
+                        <div class="main-header__top">
+
+                            <div class="auth-top">
+                                <a href="javascript:;" class="auth-top__link">Войти</a>
+                                <a href="javascript:;" class="auth-top__link">Зарегистрироваться</a>
+                            </div>
+
+                            <div class="main-header__links">
+                                <a href="mailto:mail@avancut.ru" class="main-header__link">
+                                    <svg class="main-header__icon main-header__icon_letter">
+                                        <use xlink:href="./local/img/sprite.svg#letter"></use>
+                                    </svg>
+                                    mail@avancut.ru
+                                </a>
+                                <a href="javascript:;" class="main-header__link">
+                                    <svg class="main-header__icon main-header__icon_phone">
+                                        <use xlink:href="./local/img/sprite.svg#phone"></use>
+                                    </svg>
+                                    Заказать звонок
+                                </a>
+                                <a href="tel:+78005511254" class="main-header__phone">8 (800) 551 12 54</a>
+                            </div>
+
                         </div>
-                        <div class="head-info__item head-info__item_border">
-                            <div class="head-info__label">Осталось</div>
-                            <div class="head-info__value">100 ч</div>
+                        <div class="main-header__bottom">
+
+                            <nav class="menu-top">
+                                <a href="#action" class="menu-top__link menu-top__link_active">Акция</a>
+                                <a href="#benefits" class="menu-top__link">Преимущества</a>
+                                <a href="#service" class="menu-top__link">Наш сервис</a>
+                                <a href="#offer" class="menu-top__link">Предложения</a>
+                                <a href="#interesting" class="menu-top__link">Интересное</a>
+                                <a href="#contacts" class="menu-top__link">Контакты</a>
+                            </nav>
+
+                            <a href="javascript:;" class="main-header__kp">Получить КП</a>
+
                         </div>
-                        <div class="head-info__item">
-                            <div class="head-info__label">На счету</div>
-                            <div class="head-info__value">
-                                0 руб.
-                                <a class="head-info__link" href="javascript:;">Пополнить</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Рабочая область -->
+        <main class="main-main">
+
+            <div class="block block-point" id="action"></div>
+            <div class="block block-point" id="benefits"></div>
+            <div class="block block-point" id="service"></div>
+            <div class="block block-point" id="offer"></div>
+            <div class="block block-point" id="interesting"></div>
+
+            <div class="block-contacts block-point" id="contacts">
+                <div class="container">
+                    <div class="block-contacts__title h2 text-center color-white">Как с нами связаться</div>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="block-contacts__block">
+                                <div class="block-contacts__line">
+                                    <div class="block-contacts__label block-contacts__label_inner">Телефон:</div>
+                                    <a href="tel:+78005511254" class="block-contacts__link block-contacts__phone">8 (800) 551 12 54</a>
+                                </div>
+                                <div class="block-contacts__line">
+                                    <div class="block-contacts__label block-contacts__label_inner">Адрес:</div>
+                                    <div class="block-contacts__addr">Челябинск, ул. Хлебозаводская, д.7</div>
+                                </div>
+                                <div class="block-contacts__line">
+                                    <div class="block-contacts__label block-contacts__label_inner">E-mail:</div>
+                                    <a href="mailto:mail@chssz.ru" class="block-contacts__link">mail@chssz.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="block-contacts__block">
+                                <div class="block-contacts__line">
+                                    <div class="block-contacts__label">Реквизиты:</div>
+                                </div>
+                                <div class="block-contacts__line">
+                                    <a href="javascript:;" class="block-contacts__link">Просмотреть реквизиты</a>
+                                </div>
+                                <div class="block-contacts__line">
+                                    <a href="javascript:;" class="block-contacts__link">
+                                        <svg class="block-contacts__icon">
+                                            <use xlink:href="./local/img/sprite.svg#word"></use>
+                                        </svg>
+                                        Скачать реквизиты
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="block-contacts__block">
+                                <div class="block-contacts__line">
+                                    <div class="block-contacts__label">Мы с соцсетях:</div>
+                                </div>
+
+                                <div class="block-social">
+                                    <a href="javascript:;" class="block-social__link">
+                                        <img src="./local/img/ig.svg" class="block-social__icon block-social__icon_ig">
+                                    </a>
+                                    <a href="javascript:;" class="block-social__link">
+                                        <svg class="block-social__icon block-social__icon_yt">
+                                            <use xlink:href="./local/img/sprite.svg#yt"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="main-header__right">
-
-                    <!-- Информация о пользователе -->
-                    <div class="position-relative">
-
-                        <a href="javascript:;" class="user-info" data-jq-dropdown="#jq-dropdown-user" data-vertical-offset="10">
-                            <div class="user-info__icon">ЕГ</div>
-                            <div class="user-info__name">Елена Гайнуллова</div>
-                            <div class="user-info__str font-md"></div>
-                        </a>
-
-                        <div id="jq-dropdown-user" class="selector-block selector-block_nowrap selector-block_full-width jq-dropdown jq-dropdown-relative jq-down-sm-right">
-                            <a href="javascript:;" class="selector-block__item">Перейти в профиль</a>
-                            <a href="javascript:;" class="selector-block__item">Пополнить баланс</a>
-                            <a href="javascript:;" class="selector-block__item">Выйти из системы</a>
-                        </div>
-
-                    </div>
-
-                    <!-- Оповещения -->
-                    <a href="javascript:;" class="alarm-block" data-jq-dropdown="#jq-dropdown-alarm" data-vertical-offset="10">
-                        <span class="alarm-block__icon font-md"></span>
-                        <span class="alarm-block__count count-icon">3</span>
-                    </a>
-
-                    <div id="jq-dropdown-alarm" class="alarm-window selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right scroll-pane">
-                        <a href="javascript:;" class="selector-block__item">
-                            <div class="alarm-window__line">Добавлена новая задача №135.</div>
-                            <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
-                            <div class="alarm-window__time">сегодня, 18:10</div>
-                        </a>
-                        <a href="javascript:;" class="selector-block__item">
-                            <div class="alarm-window__line">Добавлена новая задача №135.</div>
-                            <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
-                            <div class="alarm-window__time">сегодня, 18:10</div>
-                        </a>
-                        <a href="javascript:;" class="selector-block__item">
-                            <div class="alarm-window__line">Добавлена новая задача №135.</div>
-                            <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
-                            <div class="alarm-window__time">сегодня, 18:10</div>
-                        </a>
-                        <a href="javascript:;" class="selector-block__item">
-                            <div class="alarm-window__line">Добавлена новая задача №135.</div>
-                            <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
-                            <div class="alarm-window__time">сегодня, 18:10</div>
-                        </a>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </header>
 
-    <!-- Рабочая область -->
-    <main class="main-main">
+        </main>
 
-        <!-- Верхний банер -->
-        <div class="container">
-            <div class="banner-full d-none d-md-block">
-                <img class="banner-full__img" src="./local/uploads/banner.png" alt="">
-            </div>
-        </div>
-
-
-    </main>
-
-    <!-- Подвал сайта -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="main-footer__inner">
-                <div class="main-footer__left">
+        <!-- Подвал сайта -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="main-footer__inner">
                     <div class="main-footer__copy">
                         © 2020 Avancut technology
                     </div>
-                    <div class="main-footer__info">
-                        ООО "Ромашка"<br>
-                        г.Москва, ул.Ленина 10<br>
-                        <a href="tel:+78002001955" class="main-footer__info-link">8-800-200-19-55</a>
+                    <div class="auth-bottom">
+                        <svg class="main-footer__icon main-footer__icon_user">
+                            <use xlink:href="./local/img/sprite.svg#user"></use>
+                        </svg>
+                        <a href="javascript:;" class="auth-bottom__link">Войти</a>
+                        <a href="javascript:;" class="auth-bottom__link">Зарегистрироваться</a>
                     </div>
-                </div>
-                <div class="main-footer__right">
-                    <div class="row">
-                        <div class="col-3 d-none d-md-block">
-
-                            <!-- Нижнее меню -->
-                            <nav class="nav-footer">
-                                <a href="javascript:;" class="nav-footer__title">Задачи</a>
-                                <a href="javascript:;" class="nav-footer__link">Новые</a>
-                                <a href="javascript:;" class="nav-footer__link">Оценка</a>
-                                <a href="javascript:;" class="nav-footer__link">В работе</a>
-                                <a href="javascript:;" class="nav-footer__link">Архив</a>
-                                <a href="javascript:;" class="nav-footer__link">Создать задачу</a>
-                            </nav>
-
-                        </div>
-                        <div class="col-3 d-none d-md-block">
-
-                            <!-- Нижнее меню -->
-                            <nav class="nav-footer">
-                                <a href="javascript:;" class="nav-footer__title">Личный кабинет</a>
-                                <a href="javascript:;" class="nav-footer__link">Настройки</a>
-                                <a href="javascript:;" class="nav-footer__link">Мои станки</a>
-                                <a href="javascript:;" class="nav-footer__link">Сменить пароль</a>
-                            </nav>
-
-                        </div>
-                        <div class="col-3 d-none d-md-block">
-
-                            <!-- Нижнее меню -->
-                            <nav class="nav-footer">
-                                <a href="javascript:;" class="nav-footer__title">О проекте</a>
-                                <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
-                                <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
-                                <a href="javascript:;" class="nav-footer__link">Написать нам</a>
-                            </nav>
-
-                        </div>
-                        <div class="col-md-3">
-
-                            <!-- Нижнее меню -->
-                            <nav class="nav-footer">
-                                <a href="javascript:;" class="nav-footer__title">Помощь</a>
-                                <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
-                                <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
-                                <a href="javascript:;" class="nav-footer__link">Написать нам</a>
-                            </nav>
-
-                        </div>
+                    <div class="main-footer__block">
+                        <a href="tel:+78005511254" class="main-footer__phone">
+                            <svg class="main-footer__icon main-footer__icon_phone">
+                                <use xlink:href="./local/img/sprite.svg#phone"></use>
+                            </svg>
+                            8 (800) 551 12 54
+                        </a>
+                        <a href="javascript:;">
+                            Заказать звонок
+                        </a>
                     </div>
+                    <a href="mailto:mail@chssz.ru" class="">
+                        <svg class="main-footer__icon main-footer__icon_letter">
+                            <use xlink:href="./local/img/sprite.svg#letter"></use>
+                        </svg>
+                        mail@chssz.ru
+                    </a>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Меню на мобильнике -->
-    <nav class="nav-mobile">
-        <a href="javascript:;" class="nav-mobile__close font-md"></a>
-        <div class="nav-mobile__item">
-            <a href="javascript:;" class="nav-mobile__title">Задачи</a>
-            <a href="javascript:;" class="nav-mobile__link">Новые</a>
-            <a href="javascript:;" class="nav-mobile__link">Оценка</a>
-            <a href="javascript:;" class="nav-mobile__link">В работе</a>
-            <a href="javascript:;" class="nav-mobile__link">Архив</a>
-            <a href="javascript:;" class="nav-mobile__link">Создать задачу</a>
-        </div>
-        <div class="nav-mobile__item">
-            <a href="javascript:;" class="nav-mobile__title">Личный кабинет</a>
-            <a href="javascript:;" class="nav-mobile__link">Настройки</a>
-            <a href="javascript:;" class="nav-mobile__link">Мои станки</a>
-            <a href="javascript:;" class="nav-mobile__link">Сменить пароль</a>
-        </div>
-        <div class="nav-mobile__item">
-            <a href="javascript:;" class="nav-mobile__title">О проекте</a>
-            <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
-            <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
-            <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
-        </div>
-        <div class="nav-mobile__item">
-            <a href="javascript:;" class="nav-mobile__title">Помощь</a>
-            <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
-            <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
-            <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
-        </div>
-    </nav>
+    </div>
 
 </body>
 </html>

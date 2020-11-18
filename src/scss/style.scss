@@ -1,12 +1,18 @@
 // Основное
-@import "./main/fonts"; // Шрифты
+//@import "./main/fonts"; // Шрифты
 @import "./main/variables"; // Переменные
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
-@import "./main/margin"; // Отступы
+//@import "./main/margin"; // Отступы
 
 // Элементы
+@import "./elem/elem"; // Общие элементы
 
 // Общий шаблон
 @import "./template/header"; // Шапка
+@import "./template/menu.top"; // Верхнее меню
+@import "./template/main"; // Рабочая область
 @import "./template/footer"; // Подвал
+
+// Блоки
+@import "./blocks/contacts"; // Контакты

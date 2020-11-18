@@ -1,0 +1,32 @@
+.menu-top {
+    display: flex;
+    height: 55px;
+
+    &__link {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--black-light);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        margin: 0 30px 0 0;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        transition: color .5s;
+
+        &:hover {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        &_active {
+            border-top-color: var(--yellow);
+        }
+
+        .main-header_fixed & {
+            font-weight: normal;
+            text-transform: none;
+            margin: 0 25px 0 0;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.block-contacts {
+    background-color: var(--blue);
+    padding: 50px 0 70px;
+
+    &__title {
+        margin: 0 0 60px;
+    }
+    &__block {
+        padding: 0 0 0 40px;
+    }
+    &__line {
+        display: flex;
+        margin: 0 0 10px;
+    }
+    &__label {
+        color: var(--blue-tar);
+
+        &_inner {
+            width: 95px;
+        }
+    }
+    &__phone {
+        font-weight: 500;
+        text-decoration: none;
+    }
+    &__addr {
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 500;
+    }
+    &__link {
+        color: var(--white);
+        fill: var(--white);
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--white-opacity);
+            fill: var(--white-opacity);
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        height: 20px;
+        width: 20px;
+        margin: 0 5px 0 0;
+    }
+}
+
+.block-social {
+    display: flex;
+    align-items: center;
+
+    &__link {
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__icon {
+        display: block;
+
+        &_ig {
+            width: 34px;
+            height: 34px;
+            margin: 0 15px 0 0;
+        }
+        &_yt {
+            width: 40px;
+            height: 28px;
+        }
+    }
+}
