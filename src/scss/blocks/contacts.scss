@@ -5,9 +5,6 @@
     &__title {
         margin: 0 0 60px;
     }
-    &__block {
-        padding: 0 0 0 40px;
-    }
     &__line {
         display: flex;
         margin: 0 0 10px;
@@ -25,13 +22,11 @@
     }
     &__addr {
         color: var(--white);
-        font-size: 17px;
         font-weight: 500;
     }
     &__link {
         color: var(--white);
         fill: var(--white);
-        font-size: 17px;
         display: flex;
         align-items: center;
 
@@ -45,6 +40,17 @@
         height: 20px;
         width: 20px;
         margin: 0 5px 0 0;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__block {
+            padding: 0 0 0 40px;
+        }
+        &__addr,
+        &__link {
+            font-size: 17px;
+        }
     }
 }
 

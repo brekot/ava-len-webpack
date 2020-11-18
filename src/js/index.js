@@ -41,11 +41,11 @@ $(function() {
             }
         });
 
-        if ($('body').height() - 10 < ($(window).height() + scroll))
+   /*     if ($('body').height() - 10 < ($(window).height() + scroll))
         {
             $('.menu-top__link_active').removeClass('menu-top__link_active');
             $('.menu-top:last-child').addClass('menu-top__link_active');
-        }
+        }*/
     });
 
     // Переход по ссылкам меню
