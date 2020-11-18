@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Material Design';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Material Design'), local('Material-Design'), url('./fonts/materialdesignicons.woff2') format('woff2');
+}
+
+.font-md {
+    font-family: 'Material Design';
+}

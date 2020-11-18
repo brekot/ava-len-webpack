@@ -1,0 +1,58 @@
+:root {
+    --black: #000;
+    --white: #FFF;
+
+    --green-light: #E6F3DD;
+
+    --blue: #11609C;
+    --blue-bright: #0071C7;
+    --blue-light: #DCECF8;
+    --blue-hover: #F3F7F8;
+    --blue-tar: #88B0CE;
+
+    --yellow: #F39100;
+    --yellow-light: #FFA726;
+    --yellow-label: #FFEED5;
+    --yellow-dark: #D36F00;
+    --yellow-check: #F16733;
+
+    --grey1: #F6F7F8;
+    --grey2: #E7E7E7;
+    --grey3: #E8ECEF;
+    --grey4: #C4C9DB;
+    --grey5: #DCDFE4;
+    --grey6: #CBCFDC;
+    --grey7: #A2ADC8;
+    --grey8: #8B9090;
+    --grey9: #F0F2F2;
+
+    --font-color: #4B536F;
+    --tabs-link: #808599;
+    --textarea-panel: #898599;
+    --window-bg: #5B7082;
+
+    --shadow: rgba(4, 50, 88, .05);
+    --shadow-dark: rgba(4,50,88,0.15);
+    --grey-opacity: rgba(231, 231, 231, .2);
+    --blue-opacity: rgba(17, 96, 156, .1);
+    --yellow-opacity: rgba(243, 145, 0, .1);
+    --white-opacity: rgba(255, 255, 255, .5);
+    --white-l-opacity: rgba(255, 255, 255, .1);
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 754px,
+    lg: 960px,
+    xl: 1170px
+);
+
+$gutter: 30px;
