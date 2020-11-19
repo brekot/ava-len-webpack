@@ -1,0 +1,164 @@
+.bg-figure {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &__elem {
+        position: absolute;
+
+        &_a {
+            height: 88px;
+            width: 88px;
+            top: 47px;
+            left: 48px;
+        }
+        &_b {
+            height: 66px;
+            width: 67px;
+            top: 24px;
+            left: 237px;
+        }
+        &_c {
+            height: 65px;
+            width: 50px;
+            top: 90px;
+            right: 214px;
+        }
+        &_d {
+            height: 128px;
+            width: 138px;
+            top: 19px;
+            right: 62px;
+        }
+        &_e {
+            height: 155px;
+            width: 167px;
+            top: 210px;
+            left: 365px;
+        }
+        &_f {
+            height: 66px;
+            width: 67px;
+            top: 340px;
+            left: 10px;
+        }
+        &_g {
+            height: 88px;
+            width: 88px;
+            top: 495px;
+            right: 335px;
+        }
+        &_h {
+            height: 61px;
+            width: 90px;
+            top: 705px;
+            right: 100px;
+        }
+        &_i {
+            height: 125px;
+            width: 125px;
+            top: 760px;
+            left: 53px;
+        }
+        &_prezent {
+            height: 108px;
+            width: 115px;
+            top: 28px;
+            left: 50%;
+        }
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        &__elem {
+
+            &_e {
+                top: 140px;
+                left: 260px;
+            }
+            &_g {
+                top: 395px;
+                right: 295px;
+            }
+            &_h {
+                top: 630px;
+            }
+            &_prezent {
+                left: 70%;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__elem {
+
+            &_c {
+                top: auto;
+                bottom: 150px;
+            }
+            &_d {
+                top: auto;
+                bottom: 20px;
+                right: 10px;
+            }
+            &_prezent {
+                left: auto;
+                right: 0;
+                top: auto;
+                bottom: 30px;
+            }
+        }
+    }
+}
+
+.after-figure {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-word {
+    font-size: 120px;
+    line-height: 1;
+    color: var(--blue-tar);
+    text-align: center;
+    opacity: .2;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    &_action {
+        color: var(--white);
+        opacity: .15;
+        left: 120px;
+        width: auto;
+    }
+
+    @include media-breakpoint-down(lg)
+    {
+        &_action {
+            left: 0;
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        & {
+            font-size: 100px;
+        }
+    }
+    @include media-breakpoint-only(sm)
+    {
+        & {
+            font-size: 70px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            font-size: 36px;
+        }
+    }
+}

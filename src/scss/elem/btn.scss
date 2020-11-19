@@ -1,0 +1,23 @@
+.btn {
+    font-weight: 500;
+    font-size: 20px;
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 23px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+    &-one {
+        color: var(--white);
+        background-color: var(--blue);
+
+        &:hover {
+            background-color: var(--blue-dark);
+            color: var(--white);
+        }
+    }
+}

@@ -20,8 +20,16 @@
             <div class="container">
                 <div class="main-header__inner">
                     <div class="main-header__left">
+                        <a href="javascript:;" class="menu-top-btn">
+                            <span class="menu-top-btn__icon"></span>
+                        </a>
                         <a href="/" class="main-header__logo">
                             <img class="main-header__logo-pict" src="./local/img/logo.png" alt="">
+                        </a>
+                        <a href="tel:+78005511254" class="main-header__call">
+                            <svg class="main-header__call-icon">
+                                <use xlink:href="./local/img/sprite.svg#phone"></use>
+                            </svg>
                         </a>
                     </div>
                     <div class="main-header__center">
@@ -63,6 +71,7 @@
                             <a href="javascript:;" class="main-header__kp">Получить КП</a>
 
                         </div>
+                        <a href="javascript:;" class="menu-top-close"></a>
                     </div>
                 </div>
             </div>
@@ -71,8 +80,150 @@
         <!-- Рабочая область -->
         <main class="main-main">
 
-            <div class="block block-point" id="action"></div>
-            <div class="block block-point" id="benefits"></div>
+            <div class="block-about">
+                <div class="container">
+                    <div class="position-relative">
+                        <div class="bg-figure">
+                            <svg class="bg-figure__elem bg-figure__elem_a">
+                                <use xlink:href="./local/img/sprite.figure.svg#a"></use>
+                            </svg>
+                            <svg class="bg-figure__elem bg-figure__elem_b">
+                                <use xlink:href="./local/img/sprite.figure.svg#b"></use>
+                            </svg>
+                            <svg class="bg-figure__elem bg-figure__elem_c">
+                                <use xlink:href="./local/img/sprite.figure.svg#c"></use>
+                            </svg>
+                            <svg class="bg-figure__elem bg-figure__elem_d">
+                                <use xlink:href="./local/img/sprite.figure.svg#d"></use>
+                            </svg>
+                        </div>
+                        <div class="block-about__inner after-figure">
+                            <div class="block-about__left">
+                                <div class="h2 color-white">
+                                    Avancut<br>
+                                    Technology
+                                </div>
+                            </div>
+                            <div class="block-about__right">
+                                <div class="block-about__line">
+                                    Роботизированный сервис для создания управляющих программ для ваших станков лазерной резки
+                                </div>
+                                <div class="block-about__line">
+                                    Создает управляющие программы для станков лазерной резки
+                                </div>
+                                <div class="block-about__line">
+                                    Экономьте деньги на зарплате технологов
+                                </div>
+                                <div class="block-about__line">
+                                    Избавьтесь от проблем с поиском технологов
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-action block-point" id="action">
+                <div class="container">
+                    <div class="position-relative">
+                        <div class="bg-word bg-word_action">Акция</div>
+                        <div class="bg-figure">
+                            <svg class="bg-figure__elem bg-figure__elem_prezent">
+                                <use xlink:href="./local/img/sprite.figure.svg#prezent"></use>
+                            </svg>
+                        </div>
+                        <div class="block-action__inner after-figure">
+                            <div class="block-action__left">
+                                <div class="block-action__title">
+                                    Заполните анкету<br>
+                                    и получите подарок
+                                </div>
+                            </div>
+                            <div class="block-action__right">
+                                <div class="block-action__count">10</div>
+                                <div class="block-action__text">
+                                    оплаченных<br>
+                                    часов
+                                </div>
+                            </div>
+                            <div class="block-action__left">
+                                <a href="javascript::" class="btn btn-one">Заполнить анкету</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-benefits block-point" id="benefits">
+                <div class="container">
+                    <div class="position-relative">
+                        <div class="bg-word">Преимущества</div>
+                        <div class="block-benefits__inner after-figure">
+                            <div class="block-benefits__title h2 text-center">Что мы предлагаем</div>
+                            <div class="block-benefits__items">
+                                <div class="position-relative">
+                                    <div class="bg-figure d-none d-md-block">
+                                        <svg class="bg-figure__elem bg-figure__elem_e">
+                                            <use xlink:href="./local/img/sprite.figure.svg#e"></use>
+                                        </svg>
+                                        <svg class="bg-figure__elem bg-figure__elem_f">
+                                            <use xlink:href="./local/img/sprite.figure.svg#f"></use>
+                                        </svg>
+                                        <svg class="bg-figure__elem bg-figure__elem_g">
+                                            <use xlink:href="./local/img/sprite.figure.svg#g"></use>
+                                        </svg>
+                                        <svg class="bg-figure__elem bg-figure__elem_h">
+                                            <use xlink:href="./local/img/sprite.figure.svg#h"></use>
+                                        </svg>
+                                        <svg class="bg-figure__elem bg-figure__elem_i">
+                                            <use xlink:href="./local/img/sprite.figure.svg#i"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="after-figure">
+                                        <div class="block-benefits__item">
+                                            <div class="block-benefits__pict">
+                                                <img src="./local/uploads/benefits.1.jpg" alt="" class="block-benefits__img">
+                                            </div>
+                                            <div class="block-benefits__name">
+                                                <div class="block-benefits__num">1</div>
+                                                Загружайте чертежи и получайте готовые УП для загрузки в ваш станок лазерной резки
+                                            </div>
+                                        </div>
+                                        <div class="block-benefits__item">
+                                            <div class="block-benefits__pict">
+                                                <img src="./local/uploads/benefits.2.jpg" alt="" class="block-benefits__img">
+                                            </div>
+                                            <div class="block-benefits__name">
+                                                <div class="block-benefits__num">2</div>
+                                                Доверьте свой станок профессионалам лазерной резки
+                                            </div>
+                                        </div>
+                                        <div class="block-benefits__item">
+                                            <div class="block-benefits__pict">
+                                                <img src="./local/uploads/benefits.3.jpg" alt="" class="block-benefits__img">
+                                            </div>
+                                            <div class="block-benefits__name">
+                                                <div class="block-benefits__num">3</div>
+                                                Не надо платить сотруднику зарплату, платите только за выполненные задания
+                                            </div>
+                                        </div>
+                                        <div class="block-benefits__item">
+                                            <div class="block-benefits__pict">
+                                                <img src="./local/uploads/benefits.4.jpg" alt="" class="block-benefits__img">
+                                            </div>
+                                            <div class="block-benefits__name">
+                                                <div class="block-benefits__num">4</div>
+                                                Получайте качественные УП и зарабатывайте больше
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="block block-point" id="service"></div>
             <div class="block block-point" id="offer"></div>
             <div class="block block-point" id="interesting"></div>
@@ -80,58 +231,50 @@
             <div class="block-contacts block-point" id="contacts">
                 <div class="container">
                     <div class="block-contacts__title h2 text-center color-white">Как с нами связаться</div>
-                    <div class="row">
-                        <div class="col-6 col-xl-5">
-                            <div class="block-contacts__block">
-                                <div class="block-contacts__line">
-                                    <div class="block-contacts__label block-contacts__label_inner">Телефон:</div>
-                                    <a href="tel:+78005511254" class="block-contacts__link block-contacts__phone">8 (800) 551 12 54</a>
-                                </div>
-                                <div class="block-contacts__line">
-                                    <div class="block-contacts__label block-contacts__label_inner">Адрес:</div>
-                                    <div class="block-contacts__addr">Челябинск, ул. Хлебозаводская, д.7</div>
-                                </div>
-                                <div class="block-contacts__line">
-                                    <div class="block-contacts__label block-contacts__label_inner">E-mail:</div>
-                                    <a href="mailto:mail@chssz.ru" class="block-contacts__link">mail@chssz.ru</a>
-                                </div>
+                    <div class="block-contacts__inner">
+                        <div class="block-contacts__block block-contacts__block_left">
+                            <div class="block-contacts__line">
+                                <div class="block-contacts__label block-contacts__label_inner">Телефон:</div>
+                                <a href="tel:+78005511254" class="block-contacts__link block-contacts__phone">8 (800) 551 12 54</a>
+                            </div>
+                            <div class="block-contacts__line">
+                                <div class="block-contacts__label block-contacts__label_inner">Адрес:</div>
+                                <div class="block-contacts__addr">Челябинск, ул. Хлебозаводская, д.7</div>
+                            </div>
+                            <div class="block-contacts__line">
+                                <div class="block-contacts__label block-contacts__label_inner">E-mail:</div>
+                                <a href="mailto:mail@chssz.ru" class="block-contacts__link">mail@chssz.ru</a>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="block-contacts__block">
-                                <div class="block-contacts__line">
-                                    <div class="block-contacts__label">Реквизиты:</div>
-                                </div>
-                                <div class="block-contacts__line">
-                                    <a href="javascript:;" class="block-contacts__link">Просмотреть реквизиты</a>
-                                </div>
-                                <div class="block-contacts__line">
-                                    <a href="javascript:;" class="block-contacts__link">
-                                        <svg class="block-contacts__icon">
-                                            <use xlink:href="./local/img/sprite.svg#word"></use>
-                                        </svg>
-                                        Скачать реквизиты
-                                    </a>
-                                </div>
+                        <div class="block-contacts__block block-contacts__block_center">
+                            <div class="block-contacts__line">
+                                <div class="block-contacts__label">Реквизиты:</div>
+                            </div>
+                            <div class="block-contacts__line">
+                                <a href="javascript:;" class="block-contacts__link">Просмотреть реквизиты</a>
+                            </div>
+                            <div class="block-contacts__line">
+                                <a href="javascript:;" class="block-contacts__link">
+                                    <svg class="block-contacts__icon">
+                                        <use xlink:href="./local/img/sprite.svg#word"></use>
+                                    </svg>
+                                    Скачать реквизиты
+                                </a>
                             </div>
                         </div>
-                        <div class="col-2 col-xl-3">
-                            <div class="block-contacts__block">
-                                <div class="block-contacts__line">
-                                    <div class="block-contacts__label">Мы в соцсетях:</div>
-                                </div>
-
-                                <div class="block-social">
-                                    <a href="javascript:;" class="block-social__link">
-                                        <img src="./local/img/ig.svg" class="block-social__icon block-social__icon_ig">
-                                    </a>
-                                    <a href="javascript:;" class="block-social__link">
-                                        <svg class="block-social__icon block-social__icon_yt">
-                                            <use xlink:href="./local/img/sprite.svg#yt"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                
+                        <div class="block-contacts__block block-contacts__block_right">
+                            <div class="block-contacts__line">
+                                <div class="block-contacts__label">Мы в соцсетях:</div>
+                            </div>
+                            <div class="block-social">
+                                <a href="javascript:;" class="block-social__link">
+                                    <img src="./local/img/ig.svg" class="block-social__icon block-social__icon_ig">
+                                </a>
+                                <a href="javascript:;" class="block-social__link">
+                                    <svg class="block-social__icon block-social__icon_yt">
+                                        <use xlink:href="./local/img/sprite.svg#yt"></use>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +304,7 @@
                             </svg>
                             8 (800) 551 12 54
                         </a>
-                        <a href="javascript:;">
+                        <a href="javascript:;" class="main-footer__callback">
                             Заказать звонок
                         </a>
                     </div>

@@ -5,6 +5,11 @@
     &__title {
         margin: 0 0 60px;
     }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     &__line {
         display: flex;
         margin: 0 0 10px;
@@ -23,6 +28,7 @@
     &__addr {
         color: var(--white);
         font-weight: 500;
+        max-width: calc(100% - 95px);
     }
     &__link {
         color: var(--white);
@@ -46,10 +52,40 @@
     {
         &__block {
             padding: 0 0 0 40px;
+
+            &_right {
+                width: 25%;
+            }
         }
         &__addr,
         &__link {
             font-size: 17px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 50px 0 35px;
+
+            &__title {
+                margin: 0 0 35px;
+            }
+            &__block {
+                margin: 0 0 15px;
+
+                &_left {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xs)
+    {
+        &__block {
+
+            &_right {
+                width: 100%;
+            }
         }
     }
 }
