@@ -1,0 +1,145 @@
+.block-interesting {
+    padding: 75px 0 0;
+    margin: 0 0 85px;
+
+    &__inner {
+        padding: 70px 0 0;
+    }
+    &__title {
+        margin: 0 0 40px;
+    }
+    &__block {
+        padding: 0 90px;
+        position: relative;
+    }
+    &__slider {
+        padding: 5px;
+    }
+    &__slide {
+        background-color: var(--white);
+        box-shadow: 0 2px 3px var(--shadow-dark);
+        border-radius: 10px;
+        padding: 50px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    &__box {
+        position: relative;
+    }
+    &__num {
+        position: absolute;
+        font-size: 13px;
+        line-height: 1;
+        color: var(--tabs-link);
+        top: 25px;
+        left: 30px;
+    }
+    &__img {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 25px;
+    }
+    &__name {
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--black-light);
+        font-weight: bold;
+        margin: 0 auto 15px;
+        max-width: 400px;
+        padding: 0 15px;
+    }
+    &__text {
+        max-width: 400px;
+        padding: 0 15px;
+        margin: auto;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        fill: var(--blue);
+        transform: translate(0, -50%);
+
+        &:hover {
+            fill: var(--blue-dark);
+        }
+    }
+    &__prev {
+        left: 5px;
+    }
+    &__next {
+        right: 5px;
+    }
+    &__str {
+        height: 42px;
+        width: 42px;
+
+        &_rotate {
+            transform: rotate(180deg);
+        }
+    }
+
+    @include media-breakpoint-up(lg) 
+    {
+        &__num {
+
+            &_right {
+                left: auto;
+                right: 30px;
+            }
+        }
+    }
+    @include media-breakpoint-only(lg) 
+    {
+        &__inner {
+            padding: 55px 0 0;
+        }
+        &__block {
+            padding: 0 60px;
+        }
+    }
+    @include media-breakpoint-only(md) 
+    {
+        &__inner {
+            padding: 155px 0 0;
+        }
+    }
+    @include media-breakpoint-only(sm) 
+    {
+        &__inner {
+            padding: 100px 0 0;
+        }
+        &__block {
+            padding: 0 60px;
+        }
+    }
+    @include media-breakpoint-only(xs) 
+    {
+        & {
+            padding: 50px 0 0;
+            margin: 0 0 50px;
+
+            &__inner {
+                padding: 100px 0 0;
+            }
+            &__block {
+                padding: 0 20px;
+            }
+            &__name {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            &__prev {
+                left: 0;
+            }
+            &__next {
+                right: 0;
+            }
+            &__str {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}

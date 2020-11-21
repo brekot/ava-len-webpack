@@ -1,0 +1,116 @@
+.block-service {
+    padding: 30px 0 0;
+    margin: 0 0 60px;
+
+    &__inner {
+        padding: 70px 0 0;
+    }
+    &__title {
+        margin: 0 0 30px;
+    }
+    &__link {
+        background: url(img/bg.service.jpg) no-repeat center;
+        display: flex;
+        height: 640px;
+        border-radius: 10px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__block {
+        padding: 40px 0 0 108px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name {
+        margin: 0 0 25px;
+    }
+    &__text {
+        font-size: 17px;
+        line-height: 24px;
+        color: var(--blue-tar);
+    }
+    &__btn {
+        height: 102px;
+        width: 102px;
+        fill: transparent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .5s;
+        z-index: 3;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    @include media-breakpoint-only(lg) 
+    {
+        &__inner {
+            padding: 55px 0 0;
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        &__inner {
+            padding: 155px 0 0;
+        }
+        &__block {
+            padding: 0 0 0 25px;
+            max-width: 300px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__link {
+            background-size: cover;
+            height: 370px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: var(--blue-dark);
+                opacity: .5;
+            }
+        }
+        &__block {
+            padding: 0 15px;
+            text-align: center;
+            width: 100%;
+        }
+        &__name {
+            margin: 0 0 130px;
+        }
+        &__text {
+            color: var(--white);
+        }
+        &__btn {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    @include media-breakpoint-only(sm)
+    {
+        &__inner {
+            padding: 100px 0 0;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__inner {
+            padding: 50px 0 0;
+        }
+    }
+}

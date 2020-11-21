@@ -1,9 +1,28 @@
 import $ from "jquery";
+import Swiper from './swiper.js';
 
 window.jQuery = $;
 window.$ = $;
 
+require('@fancyapps/fancybox');
+
 $(function() {
+
+    /* - - - Подключение fancybox - - - */
+    $('[data-fancybox]').fancybox({
+        buttons: [
+            "zoom",
+            //"share",
+            "slideShow",
+            "fullScreen",
+            //"download",
+            //"thumbs",
+            "close"
+        ],
+        touch: {
+            vertical: false
+        },
+    });
 
     // Прикрепляем шапку
     var header = $('.main-header');
@@ -75,5 +94,22 @@ $(function() {
 
         $('.main-header__center').removeClass('main-header__center_open');
         $('body').css({'overflow': 'auto'});
+    });
+
+    new Swiper('.block-interesting__slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+            }
+        },
+        navigation: {
+            nextEl: '.block-interesting__next',
+            prevEl: '.block-interesting__prev',
+        },
     });
 });

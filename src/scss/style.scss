@@ -3,6 +3,10 @@
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
 
+// Библиотеки
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
+@import "./lib/swiper"; // Общие стили сайдера
+
 // Элементы
 @import "./elem/elem"; // Общие элементы
 @import "./elem/figure"; // Фигуры в фоне
@@ -18,4 +22,7 @@
 @import "./blocks/about"; // О нас
 @import "./blocks/action"; // Акция
 @import "./blocks/benefits"; // Преимущества
+@import "./blocks/service"; // О сервисе
+@import "./blocks/offer"; // Предложения
+@import "./blocks/interesting"; // Интересные факты
 @import "./blocks/contacts"; // Контакты
