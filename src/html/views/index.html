@@ -68,7 +68,7 @@
                                 <a href="#contacts" class="menu-top__link">Контакты</a>
                             </nav>
 
-                            <a href="javascript:;" class="main-header__kp">Получить КП</a>
+                            <a href="javascript:;" class="main-header__kp" data-fancybox data-src="#get-kp">Получить КП</a>
 
                         </div>
                         <a href="javascript:;" class="menu-top-close"></a>
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                             <div class="block-action__left">
-                                <a href="javascript::" class="btn btn-one">Заполнить анкету</a>
+                                <a href="javascript::" class="btn btn-one" data-fancybox data-src="#w4">Заполнить анкету</a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                                 Первый в мире станок<br>
                                 с минерало-композитной станиной!
                             </div>
-                            <a href="javascript:;" class="btn btn-two">
+                            <a href="javascript:;" class="btn btn-two" data-fancybox data-src="#w5">
                                 Получить<span class="d-none d-sm-inline">&nbsp;коммерческое</span>&nbsp;предложение
                             </a>
                         </div>
@@ -511,6 +511,81 @@
             </div>
         </footer>
 
+    </div>
+
+    <div class="window-one" id="get-kp">
+        <div class="window-one__head">
+            <div class="window-one__title">Название окна</div>
+            <div class="window-one__xs-full">
+
+                <label class="checkbox-one checkbox-one_xs-revers">
+                    <div class="checkbox-one__label">Чекбокс</div>
+                    <div class="checkbox-one__box checkbox-one__box_right">
+                        <input class="checkbox-one__input" type="checkbox" value="" checked>
+                        <span class="checkbox-one__circle"></span>
+                    </div>
+                </label>
+
+            </div>
+        </div>
+        <div class="window-one__body">
+
+            <div class="form-input mb-15">
+                <input class="form-input__input" type="text" value="" placeholder="Ваше имя">
+            </div>
+
+            <div class="mb-15">
+                <label class="checkbox-one">            
+                    <div class="checkbox-one__box checkbox-one__box_left">
+                        <input class="checkbox-one__input" type="checkbox" value="" checked>
+                        <span class="checkbox-one__circle"></span>
+                    </div>
+                    <div class="checkbox-one__label">Чекбокс</div>
+                </label>
+            </div>
+
+            <div class="form-textarea mb-15">
+                <textarea class="form-textarea__input" placeholder="Введите текст комментария"></textarea>
+            </div>
+
+        </div>
+        <div class="window-one__foot">
+            <div class="window-one__foot-left">
+                <button type="submit" class="btn btn-two">
+                    Отправить
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window-one window-one_short" id="w4">
+        <div class="window-one__head"></div>
+        <div class="window-one__body text-center">
+            <div class="window-icon">
+                <svg class="window-icon__attention">
+                    <use xlink:href="./local/img/sprite.svg#a"></use>
+                </svg>
+            </div>
+            <div class="window-one__title mb-20">Какая-то ошибка</div>
+            <p>
+                Какое-то действие не удалось выполнить или выполнено действие по удалению чего-то, например.
+            </p>
+        </div>
+    </div>
+
+    <div class="window-one window-one_short" id="w5">
+        <div class="window-one__head"></div>
+        <div class="window-one__body text-center">
+            <div class="window-icon">
+                <svg class="window-icon__correct">
+                    <use xlink:href="./local/img/sprite.svg#с"></use>
+                </svg>
+            </div>
+            <div class="window-one__title mb-20">Что-то успешно добавлено</div>
+            <p>
+                Какое-то действие успешно удалось выполнить, например, успешно добавить или сохранить правило и т.д.
+            </p>
+        </div>
     </div>
 
 </body>

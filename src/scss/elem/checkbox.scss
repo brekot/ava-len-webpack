@@ -1,0 +1,50 @@
+.checkbox-one {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__box {
+        position: relative;
+        border: 2px solid var(--grey5);
+        height: 30px;
+        width: 50px;
+        border-radius: 15px;
+
+        &_left {
+            margin: 0 10px 0 0;
+        }
+        &_right {
+            margin: 0 0 0 10px;
+        }
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &__circle {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: var(--tabs-link);
+        border-radius: 50%;
+        top: -2px;
+        left: -2px;
+        transition: all .5s;
+    }
+    &__input:checked + &__circle {
+        left: 18px;
+        background-color: var(--yellow);
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        &_xs-revers &__label {
+            order: 2;
+        }
+        &_xs-revers &__box {
+            order: 1;
+            margin: 0 10px 0 0;
+        }
+    }
+}
