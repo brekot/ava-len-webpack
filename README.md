@@ -1,4 +1,4 @@
-<a href="./docs/index.html">Страница</a>
+https://brekot.github.io/ava-len-webpack/
 
 <hr>
 
