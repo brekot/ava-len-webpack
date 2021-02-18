@@ -133,8 +133,13 @@
         &__title {
             margin: 0;
         }
+        .block-benefits__item {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+        }
         &__pict {
-            display: none;
+            margin: 20px 0 0;
         }
         &__name {
             margin: 70px 0 0;
